@@ -1,0 +1,39 @@
+.card{
+    width: 80%;
+    width: 1110px;
+    margin: 30px auto;
+    outline: 0px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+    height: 100vh;
+}
+
+.img-pic{
+    border: 5px solid teal;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price-tag{
+    background-color: teal;
+    color: #fff;
+    padding: 5px 8px;
+}
+
+.article{
+    background-color: #ccc;
+    height: 200px;
+    box-shadow: 10px 10px;
+   
+}
+
+.para{
+    width: 50%;
+}

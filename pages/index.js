@@ -3,17 +3,19 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import { Wears } from '@/Components/Wears'
+import { useRouter } from 'next/router'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter()
   return (
     <>
       <div>
        <h1> Home Page</h1>
-       <Link href="/about">Go to about page</Link>
-       <Wears />
+       <button onClick={() => router.push("/gadgets")} className={styles.product}>Go to product page</button>
+      
 
       </div>
     </>
